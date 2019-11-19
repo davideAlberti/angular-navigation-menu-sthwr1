@@ -4,9 +4,15 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, MDBBootstrapModule.forRoot() ],
+  imports: [ 
+    BrowserModule, 
+    FormsModule, 
+    MDBBootstrapModule.forRoot(),
+    RouterModule
+  ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })
