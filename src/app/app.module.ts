@@ -4,15 +4,23 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { PagineModule } from './pagine/pagine.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule, MatCardModule, MatStepperModule, MatButtonModule } from '@angular/material';
+import { MatIconModule } from '@angular/material/icon';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [ 
     BrowserModule, 
     FormsModule, 
     MDBBootstrapModule.forRoot(),
-
-    PagineModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatCardModule,
+    FlexLayoutModule,
+    MatIconModule,
+    MatStepperModule,
+    MatButtonModule
   ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]

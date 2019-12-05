@@ -15,7 +15,8 @@
 			</li>
 
 			<li class="nav-item dropdown" dropdown>
-				<a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+				<a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
+					mdbWavesEffect>
 					<i class="fa fa-user"></i> Profile<span class="caret"></span>
 				</a>
 				<div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
@@ -28,5 +29,18 @@
 </mdb-navbar>
 
 <div class="container">
-  <!-- <router-outlet></router-outlet> -->
+	<div fxLayout style="height: 95%">
+		<mat-horizontal-stepper fxLayout="column" fxFlex="100" fxLayoutAlign=" stretch" #stepper style="background: #DDD">
+			<mat-step label="Step 1" fxFlex="100" fxLayout="column">
+				<div style="border: 2px solid green;" fxFlex="100">
+					<div fxFlex="100" fxFill style="border: 2px solid red;">Step 1: must fill the entire space</div>
+				</div>
+			</mat-step>
+			<mat-step label="Step 2">
+				<div style="border: 2px solid green;height:100%;">Step 2: must fill the entire space too, but it's shifted down!</div>
+			</mat-step>
+			<mat-step label="Step 3">Step 3: This is even more shifted!</mat-step>
+			<mat-step label="Step 4">Step 4: ...</mat-step>
+		</mat-horizontal-stepper>
+	</div>
 </div>
